@@ -75,7 +75,60 @@ section {
 }
 
 /* Estilização do Header */
+.header {
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
 
+.header .logo img {
+    height: 6.5rem;
+    border-radius: 100%;
+}
+
+.header .nav-bar a {
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.header .nav-bar a:hover {
+    color: var(--main-color);
+    border-bottom: 0.1rem solid var(--main-color);
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.header .icons {
+    display: flex;
+    align-items: center;
+}
+
+.header .icons div {
+    margin-left: 2rem;
+}
+
+.header .icons div ion-icon {
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+}
+
+.header .icons div ion-icon:hover {
+    color: var(--main-color);
+}
+
+#menu-btn {
+    display: none;
+}
 #home {
     background-image: url('./images/home.jpg');
     background-size: cover;
