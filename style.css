@@ -313,3 +313,42 @@ section {
     font-size: 1.5rem;
     text-transform: lowercase;
 }
+
+/* Avaliações */
+
+.avaliaçoes .box-conteiner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.avaliaçoes .box-conteiner .box {
+    border: var(--border);
+    text-align: center;
+    padding: 3rem 2rem; 
+}
+
+.avaliaçoes .box-conteiner .box p {
+    font-size: 1.7rem;
+    line-height: 1.8;
+    color: #ccc;
+    padding: 2rem 0;
+}
+
+.avaliaçoes .box-conteiner .box .user {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.avaliaçoes .box-conteiner .box h3 {
+    padding: 1rem 0;
+    color: #fff;
+    font-size: 2.2rem;
+}
+
+.avaliaçoes .box-conteiner .box .stars i {
+    font-size: 1.7rem;
+    color: var(--main-color);
+}
